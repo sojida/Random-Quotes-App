@@ -29,11 +29,10 @@ var quotes = new XMLHttpRequest();
 
 
             function share(){
-               file = window.open('https://twitter.com/intent/tweet?&text=' + encodeURIComponent('"' +  quotesObj[rnd].quoteText + '" ' + "\n" + " -"+ quotesObj[rnd].quoteAuthor ));
-               return file
-               
+                return  window.open('https://twitter.com/intent/tweet?&text=' + encodeURIComponent('"' +  quotesObj[rnd].quoteText + '" ' + "\n" + " -"+ quotesObj[rnd].quoteAuthor ));   
             }
-            clickTwittwer.addEventListener("click", share)
+
+            clickTwittwer.addEventListener("click", share);
 
         }
       
